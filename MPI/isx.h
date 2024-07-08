@@ -34,6 +34,8 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #define __STDC_FORMAT_MACROS
 #include <inttypes.h>
+#include <stdio.h>
+#include "params.h"
 #include "timer.h"
 #include "pcg_basic.h"
 /*
