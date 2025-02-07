@@ -438,7 +438,7 @@ static inline KEY_TYPE * bucketize_local_keys(KEY_TYPE const * __restrict__ cons
 
 
 // #define CHUNK_SIZE (std::min(256, (int)(KEY_BUFFER_SIZE / NUM_PES))) // Tuned chunk size
-#define CHUNK_SIZE 2048
+#define CHUNK_SIZE 2450
 
 struct ExchangeKeysPkt {
   long long int start_index;
@@ -446,20 +446,46 @@ struct ExchangeKeysPkt {
   int count;
 };
 
-class ExchangeKeysSelector: public hclib::Selector<1, ExchangeKeysPkt> {
+class ExchangeKeysSelector: public hclib::Selector<3, ExchangeKeysPkt> {
 
 KEY_TYPE *my_bucket_keys;
+const KEY_TYPE *my_local_bucketed_keys;
+long long int *receive_offset;
 
-void process(ExchangeKeysPkt pkt, int sender_rank) {
+void write_receive_offset(ExchangeKeysPkt pkt, int sender_rank) {
+    ExchangeKeysPkt pkt2;
+    pkt2.start_index = *receive_offset;
+    *receive_offset += pkt.start_index;
+    pkt2.count = (int)pkt.start_index;
+    pkt2.values[0] = pkt.values[0];
+    send(1, pkt2, sender_rank);
+}
+
+void return_old_offset(ExchangeKeysPkt pkt, int sender_rank) {
+    for (int x = 0; x < pkt.count; x += CHUNK_SIZE) {
+        ExchangeKeysPkt pkt2;
+        pkt2.start_index = pkt.start_index + x;
+        pkt2.count = std::min(CHUNK_SIZE, pkt.count - x);
+        for (int k = 0; k < pkt2.count; k++) {
+          pkt2.values[k] = my_local_bucketed_keys[pkt.values[0] + x + k];
+        }
+        send(2, pkt2, sender_rank);
+    }
+}
+
+void put(ExchangeKeysPkt pkt, int sender_rank) {
     for (int i = 0; i < pkt.count; i++) {
       my_bucket_keys[pkt.start_index + i] = pkt.values[i];
-  }
+    }
 }
 
 public:
 
-ExchangeKeysSelector(KEY_TYPE *my_bucket_keys) : my_bucket_keys(my_bucket_keys){
-      mb[0].process = [this](ExchangeKeysPkt pkt, int sender_rank) { this->process(pkt, sender_rank); };
+ExchangeKeysSelector(KEY_TYPE *my_bucket_keys, long long int *receive_offset, const KEY_TYPE *my_local_bucketed_keys) : 
+    my_bucket_keys(my_bucket_keys), receive_offset(receive_offset), my_local_bucketed_keys(my_local_bucketed_keys){
+      mb[0].process = [this](ExchangeKeysPkt pkt, int sender_rank) { this->write_receive_offset(pkt, sender_rank); };
+      mb[1].process = [this](ExchangeKeysPkt pkt, int sender_rank) { this->return_old_offset(pkt, sender_rank); };
+      mb[2].process = [this](ExchangeKeysPkt pkt, int sender_rank) { this->put(pkt, sender_rank); };
   }
 };
 
@@ -483,7 +509,7 @@ static inline KEY_TYPE * exchange_keys(int const * __restrict__ const send_offse
          local_bucket_sizes[my_rank]*sizeof(KEY_TYPE));
 
   // ALL REMOTE -> pure HClib-Actor
-  ExchangeKeysSelector *exchangeKeysSelector = new ExchangeKeysSelector(my_bucket_keys);
+  ExchangeKeysSelector *exchangeKeysSelector = new ExchangeKeysSelector(my_bucket_keys, &receive_offset, my_local_bucketed_keys);
   hclib::finish([=, &total_keys_sent]() {
     exchangeKeysSelector->start();
 
@@ -503,7 +529,11 @@ static inline KEY_TYPE * exchange_keys(int const * __restrict__ const send_offse
       const int read_offset_from_self = send_offsets[target_pe];
       const int my_send_size = local_bucket_sizes[target_pe];
 
-      const long long int write_offset_into_target = shmem_longlong_fadd(&receive_offset, (long long int)my_send_size, target_pe);
+      // const long long int write_offset_into_target = shmem_longlong_fadd(&receive_offset, (long long int)my_send_size, target_pe);
+      ExchangeKeysPkt pkt;
+      pkt.start_index = (long long int)my_send_size;
+      pkt.values[0] = read_offset_from_self;
+      exchangeKeysSelector->send(0, pkt, target_pe);
 
 #ifdef DEBUG
       printf("Rank: %d Target: %d Offset into target: %lld Offset into myself: %d Send Size: %d\n",
@@ -514,15 +544,6 @@ static inline KEY_TYPE * exchange_keys(int const * __restrict__ const send_offse
       //               &(my_local_bucketed_keys[read_offset_from_self]),
       //               my_send_size,
       //               target_pe);
-      for (int x = 0; x < my_send_size; x += CHUNK_SIZE) {
-        ExchangeKeysPkt pkt;
-        pkt.start_index = write_offset_into_target + x;
-        pkt.count = std::min(CHUNK_SIZE, my_send_size - x);
-        for (int k = 0; k < pkt.count; k++) {
-          pkt.values[k] = my_local_bucketed_keys[read_offset_from_self + x + k];
-        }
-        exchangeKeysSelector->send(0, pkt, target_pe);
-      }
 
       total_keys_sent += my_send_size;
   }
