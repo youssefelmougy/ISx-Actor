@@ -2,7 +2,7 @@ CC = mpicc
 LD = $(CC)
 DEBUGFLAGS = -g -p -O0 -DDEBUG
 OPTFLAGS = -O3 -DNDEBUG -mavx
-CFLAGS += -Wall -Wextra -std=c11 #$(OPTFLAGS)
+CFLAGS += -Wall -Wextra -std=c99 #$(OPTFLAGS)
 LDLIBS += -lrt -lm
 LDFLAGS += 
 ### 
