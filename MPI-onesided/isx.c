@@ -39,7 +39,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <unistd.h> // sleep()
 #include <sys/stat.h>
 #include <stdint.h>
-#include "mpi_proto.h"
+//#include "mpi_proto.h"
 #include "params.h"
 #include "isx.h"
 #include "timer.h"
