@@ -242,7 +242,7 @@ static int bucket_sort(void)
 
     KEY_TYPE * my_bucket_keys = exchange_keys(send_offsets,
                                               local_bucket_sizes,
-                                              my_local_bucketed_keys);
+                                              my_local_bucketed_keys); // TODO: CONVERT TO ACTOR
 
     my_bucket_size = receive_offset;
 
@@ -437,6 +437,32 @@ static inline KEY_TYPE * bucketize_local_keys(KEY_TYPE const * __restrict__ cons
 }
 
 
+// #define CHUNK_SIZE (std::min(256, (int)(KEY_BUFFER_SIZE / NUM_PES))) // Tuned chunk size
+#define CHUNK_SIZE 2048
+
+struct ExchangeKeysPkt {
+  long long int start_index;
+  KEY_TYPE values[CHUNK_SIZE];
+  int count;
+};
+
+class ExchangeKeysSelector: public hclib::Selector<1, ExchangeKeysPkt> {
+
+KEY_TYPE *my_bucket_keys;
+
+void process(ExchangeKeysPkt pkt, int sender_rank) {
+    for (int i = 0; i < pkt.count; i++) {
+      my_bucket_keys[pkt.start_index + i] = pkt.values[i];
+  }
+}
+
+public:
+
+ExchangeKeysSelector(KEY_TYPE *my_bucket_keys) : my_bucket_keys(my_bucket_keys){
+      mb[0].process = [this](ExchangeKeysPkt pkt, int sender_rank) { this->process(pkt, sender_rank); };
+  }
+};
+
 /*
  * Each PE sends the contents of its local buckets to the PE that owns that bucket.
  */
@@ -449,47 +475,66 @@ static inline KEY_TYPE * exchange_keys(int const * __restrict__ const send_offse
   const int my_rank = shmem_my_pe();
   unsigned int total_keys_sent = 0;
 
+  // ALL LOCAL -> remains SHMEM
   // Keys destined for local key buffer can be written with memcpy
   const long long int write_offset_into_self = shmem_longlong_fadd(&receive_offset, (long long int)local_bucket_sizes[my_rank], my_rank);
   memcpy(&my_bucket_keys[write_offset_into_self],
          &my_local_bucketed_keys[send_offsets[my_rank]],
          local_bucket_sizes[my_rank]*sizeof(KEY_TYPE));
 
+  // ALL REMOTE -> pure HClib-Actor
+  ExchangeKeysSelector *exchangeKeysSelector = new ExchangeKeysSelector(my_bucket_keys);
+  hclib::finish([=, &total_keys_sent]() {
+    exchangeKeysSelector->start();
 
-  for(uint64_t i = 0; i < NUM_PES; ++i){
+    for(uint64_t i = 0; i < NUM_PES; ++i){
 
 #ifdef PERMUTE
-    const int target_pe = permute_array[i];
+      const int target_pe = permute_array[i];
 #elif INCAST
-    const int target_pe = i;
+      const int target_pe = i;
 #else
-    const int target_pe = (my_rank + i) % NUM_PES;
+      const int target_pe = (my_rank + i) % NUM_PES;
 #endif
 
-    // Local keys already written with memcpy
-    if(target_pe == my_rank){ continue; }
+      // Local keys already written with memcpy
+      if(target_pe == my_rank){ continue; }
 
-    const int read_offset_from_self = send_offsets[target_pe];
-    const int my_send_size = local_bucket_sizes[target_pe];
+      const int read_offset_from_self = send_offsets[target_pe];
+      const int my_send_size = local_bucket_sizes[target_pe];
 
-    const long long int write_offset_into_target = shmem_longlong_fadd(&receive_offset, (long long int)my_send_size, target_pe);
+      const long long int write_offset_into_target = shmem_longlong_fadd(&receive_offset, (long long int)my_send_size, target_pe);
 
 #ifdef DEBUG
-    printf("Rank: %d Target: %d Offset into target: %lld Offset into myself: %d Send Size: %d\n",
-        my_rank, target_pe, write_offset_into_target, read_offset_from_self, my_send_size);
+      printf("Rank: %d Target: %d Offset into target: %lld Offset into myself: %d Send Size: %d\n",
+          my_rank, target_pe, write_offset_into_target, read_offset_from_self, my_send_size);
 #endif
 
-    shmem_int_put(&(my_bucket_keys[write_offset_into_target]),
-                  &(my_local_bucketed_keys[read_offset_from_self]),
-                  my_send_size,
-                  target_pe);
+      // shmem_int_put(&(my_bucket_keys[write_offset_into_target]),
+      //               &(my_local_bucketed_keys[read_offset_from_self]),
+      //               my_send_size,
+      //               target_pe);
+      for (int x = 0; x < my_send_size; x += CHUNK_SIZE) {
+        ExchangeKeysPkt pkt;
+        pkt.start_index = write_offset_into_target + x;
+        pkt.count = std::min(CHUNK_SIZE, my_send_size - x);
+        for (int k = 0; k < pkt.count; k++) {
+          pkt.values[k] = my_local_bucketed_keys[read_offset_from_self + x + k];
+        }
+        exchangeKeysSelector->send(0, pkt, target_pe);
+      }
 
-    total_keys_sent += my_send_size;
+      total_keys_sent += my_send_size;
   }
+
+  exchangeKeysSelector->done(0);
+});
 
 #ifdef BARRIER_ATA
   shmem_barrier_all();
 #endif
+
+  // printf("PE %d, TOTAL TIME shmem_longlong_fadd: %8.5lf seconds, TOTAL TIME shmem_int_put: %8.5lf seconds\n", t_fadd_total, t_put_total);
 
   timer_stop(&timers[TIMER_ATA_KEYS]);
   timer_count(&timers[TIMER_ATA_KEYS], total_keys_sent);
@@ -946,4 +991,3 @@ static void shuffle(int* array, size_t n) {
     }
 }
 #endif
-
