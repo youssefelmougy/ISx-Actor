@@ -1,8 +1,7 @@
-CC = oshcc
-LD = $(CC)
+LD = $(CXX)
 DEBUGFLAGS = -g -p -O0 -DDEBUG
 OPTFLAGS = -O3 -DNDEBUG -mavx
-CFLAGS += -Wall -Wextra -std=c99 #$(OPTFLAGS)
+CXXFLAGS += -Wall -Wextra -std=c++11 #$(OPTFLAGS)
 LDLIBS += -lrt -lm
 LDFLAGS += 
 ### 
@@ -12,27 +11,27 @@ WEAK = 2
 WEAKISO = 3
 ###
 
-.PHONY: all clean debug
+.PHONY: all clean debug optimized
 
-SRCS := $(wildcard *.c)
+SRCS := $(wildcard *.cpp)
 OBJDIR := obj
 BINDIR := bin
 STRONG_EXE = isx.strong
 WEAK_EXE = isx.weak 
 WEAKISO_EXE = isx.weak_iso
-STRONG_OBJS := $(SRCS:.c=.o_s)
+STRONG_OBJS := $(SRCS:.cpp=.o_s)
 STRONG_OBJS := $(addprefix $(OBJDIR)/,$(STRONG_OBJS))
-WEAK_OBJS := $(SRCS:.c=.o_w)
+WEAK_OBJS := $(SRCS:.cpp=.o_w)
 WEAK_OBJS := $(addprefix $(OBJDIR)/,$(WEAK_OBJS))
-WEAKISO_OBJS := $(SRCS:.c=.o_wi)
+WEAKISO_OBJS := $(SRCS:.cpp=.o_wi)
 WEAKISO_OBJS := $(addprefix $(OBJDIR)/,$(WEAKISO_OBJS))
 
 all: $(STRONG_EXE) $(WEAK_EXE) $(WEAKISO_EXE)
 
-optimized: CFLAGS += $(OPTFLAGS)
+optimized: CXXFLAGS += $(OPTFLAGS)
 optimized: all
 
-debug: CFLAGS += $(DEBUGFLAGS)
+debug: CXXFLAGS += $(DEBUGFLAGS)
 debug: all
 
 $(STRONG_EXE):$(STRONG_OBJS)
@@ -47,17 +46,17 @@ $(WEAKISO_EXE):$(WEAKISO_OBJS)
 	@mkdir -p $(BINDIR)
 	$(LD) $(WEAKISO_OBJS) -o $(BINDIR)/$(WEAKISO_EXE) $(LDLIBS) $(LDFLAGS)
 
-$(OBJDIR)/%.o_s : %.c
+$(OBJDIR)/%.o_s : %.cpp
 	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -D SCALING_OPTION=$(STRONG) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -D SCALING_OPTION=$(STRONG) -c $< -o $@
 
-$(OBJDIR)/%.o_w: %.c
+$(OBJDIR)/%.o_w: %.cpp
 	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -D SCALING_OPTION=$(WEAK) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -D SCALING_OPTION=$(WEAK) -c $< -o $@
 
-$(OBJDIR)/%.o_wi: %.c
+$(OBJDIR)/%.o_wi: %.cpp
 	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -D SCALING_OPTION=$(WEAKISO) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -D SCALING_OPTION=$(WEAKISO) -c $< -o $@
 
 clean:
 	@- $(RM) $(BINDIR)/$(STRONG_EXE)
@@ -68,7 +67,7 @@ clean:
 	@- $(RM) $(WEAKISO_OBJS)
 
 depend:
-	    makedepend -- $(CFLAGS) -- $(SRCS)
+	    makedepend -- $(CXXFLAGS) -- $(SRCS)
 
 # Don't place anything below this line, since
 # # the make depend program will overwrite it

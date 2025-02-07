@@ -33,7 +33,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+#include <sys/time.h>
 #include <math.h>
 #include <string.h>
 #include <unistd.h> // sleep()
@@ -274,7 +274,7 @@ static KEY_TYPE * make_input(void)
 {
   timer_start(&timers[TIMER_INPUT]);
 
-  KEY_TYPE * restrict const my_keys = malloc(NUM_KEYS_PER_PE * sizeof(KEY_TYPE));
+  KEY_TYPE * __restrict__ const my_keys = (KEY_TYPE *) malloc(NUM_KEYS_PER_PE * sizeof(KEY_TYPE));
 
   pcg32_random_t rng = seed_my_rank();
 
@@ -306,9 +306,9 @@ static KEY_TYPE * make_input(void)
  * Computes the size of each bucket by iterating all keys and incrementing
  * their corresponding bucket's size
  */
-static inline int * count_local_bucket_sizes(KEY_TYPE const * restrict const my_keys)
+static inline int * count_local_bucket_sizes(KEY_TYPE const * __restrict__ const my_keys)
 {
-  int * restrict const local_bucket_sizes = malloc(NUM_BUCKETS * sizeof(int));
+  int * __restrict__ const local_bucket_sizes = (int *) malloc(NUM_BUCKETS * sizeof(int));
 
   timer_start(&timers[TIMER_BCOUNT]);
 
@@ -346,14 +346,14 @@ static inline int * count_local_bucket_sizes(KEY_TYPE const * restrict const my_
  * Stores a copy of the bucket offsets for use in exchanging keys because the
  * original bucket_offsets array is modified in the bucketize function
  */
-static inline int * compute_local_bucket_offsets(int const * restrict const local_bucket_sizes,
-                                                 int ** restrict send_offsets)
+static inline int * compute_local_bucket_offsets(int const * __restrict__ const local_bucket_sizes,
+                                                 int ** __restrict__ send_offsets)
 {
-  int * restrict const local_bucket_offsets = malloc(NUM_BUCKETS * sizeof(int));
+  int * __restrict__ const local_bucket_offsets = (int *) malloc(NUM_BUCKETS * sizeof(int));
 
   timer_start(&timers[TIMER_BOFFSET]);
 
-  (*send_offsets) = malloc(NUM_BUCKETS * sizeof(int));
+  (*send_offsets) = (int *) malloc(NUM_BUCKETS * sizeof(int));
 
   local_bucket_offsets[0] = 0;
   (*send_offsets)[0] = 0;
@@ -386,10 +386,10 @@ static inline int * compute_local_bucket_offsets(int const * restrict const loca
  * Places local keys into their corresponding local bucket.
  * The contents of each bucket are not sorted.
  */
-static inline KEY_TYPE * bucketize_local_keys(KEY_TYPE const * restrict const my_keys,
-                                              int * restrict const local_bucket_offsets)
+static inline KEY_TYPE * bucketize_local_keys(KEY_TYPE const * __restrict__ const my_keys,
+                                              int * __restrict__ const local_bucket_offsets)
 {
-  KEY_TYPE * restrict const my_local_bucketed_keys = malloc(NUM_KEYS_PER_PE * sizeof(KEY_TYPE));
+  KEY_TYPE * __restrict__ const my_local_bucketed_keys = (KEY_TYPE *) malloc(NUM_KEYS_PER_PE * sizeof(KEY_TYPE));
 
   timer_start(&timers[TIMER_BUCKETIZE]);
 
@@ -426,9 +426,9 @@ static inline KEY_TYPE * bucketize_local_keys(KEY_TYPE const * restrict const my
 /*
  * Each PE sends the contents of its local buckets to the PE that owns that bucket.
  */
-static inline KEY_TYPE * exchange_keys(int const * restrict const send_offsets,
-                                       int const * restrict const local_bucket_sizes,
-                                       KEY_TYPE const * restrict const my_local_bucketed_keys)
+static inline KEY_TYPE * exchange_keys(int const * __restrict__ const send_offsets,
+                                       int const * __restrict__ const local_bucket_sizes,
+                                       KEY_TYPE const * __restrict__ const my_local_bucketed_keys)
 {
   timer_start(&timers[TIMER_ATA_KEYS]);
 
@@ -505,9 +505,9 @@ static inline KEY_TYPE * exchange_keys(int const * restrict const send_offsets,
  * minimum key value to allow indexing from 0.
  * my_bucket_keys: All keys in my bucket unsorted [my_rank * BUCKET_WIDTH, (my_rank+1)*BUCKET_WIDTH)
  */
-static inline int * count_local_keys(KEY_TYPE const * restrict const my_bucket_keys)
+static inline int * count_local_keys(KEY_TYPE const * __restrict__ const my_bucket_keys)
 {
-  int * restrict const my_local_key_counts = malloc(BUCKET_WIDTH * sizeof(int));
+  int * __restrict__ const my_local_key_counts = (int *) malloc(BUCKET_WIDTH * sizeof(int));
   memset(my_local_key_counts, 0, BUCKET_WIDTH * sizeof(int));
 
   timer_start(&timers[TIMER_SORT]);
@@ -548,8 +548,8 @@ static inline int * count_local_keys(KEY_TYPE const * restrict const my_bucket_k
  * Ensures all keys are within a PE's bucket boundaries.
  * Ensures the final number of keys is equal to the initial.
  */
-static int verify_results(int const * restrict const my_local_key_counts,
-                           KEY_TYPE const * restrict const my_local_keys)
+static int verify_results(int const * __restrict__ const my_local_key_counts,
+                           KEY_TYPE const * __restrict__ const my_local_keys)
 {
 
   shmem_barrier_all();
@@ -767,7 +767,7 @@ static double * gather_rank_times(_timer_t * const timer)
     shmem_barrier_all();
 
 #ifdef OPENSHMEM_COMPLIANT
-    double * my_average_time = shmem_malloc(sizeof(double));
+    double * my_average_time = (double *) shmem_malloc(sizeof(double));
 #else
     double * my_average_time = shmalloc(sizeof(double));
 #endif
@@ -778,7 +778,7 @@ static double * gather_rank_times(_timer_t * const timer)
 
     *my_average_time = temp/(timer->seconds_iter);
 
-    double * pe_average_times = shmem_malloc(NUM_PES * sizeof(double));
+    double * pe_average_times = (double *) shmem_malloc(NUM_PES * sizeof(double));
 
     shmem_barrier_all();
     shmem_double_fcollect(SHMEM_TEAM_WORLD, pe_average_times, my_average_time, 1);
@@ -804,7 +804,7 @@ static unsigned int * gather_rank_counts(_timer_t * const timer)
     shmem_barrier_all();
 
 #ifdef OPENSHMEM_COMPLIANT
-    unsigned int * my_average_count = shmem_malloc(sizeof(unsigned int));
+    unsigned int * my_average_count = (unsigned int *) shmem_malloc(sizeof(unsigned int));
 #else
     unsigned int * my_average_count = shmalloc(sizeof(unsigned int));
 #endif
@@ -815,7 +815,7 @@ static unsigned int * gather_rank_counts(_timer_t * const timer)
 
     *my_average_count = temp/(timer->count_iter);
 
-    unsigned int * pe_average_counts = shmem_malloc(NUM_PES * sizeof(unsigned int));
+    unsigned int * pe_average_counts = (unsigned int *) shmem_malloc(NUM_PES * sizeof(unsigned int));
 
     shmem_barrier_all();
     shmem_uint_fcollect(SHMEM_TEAM_WORLD, pe_average_counts, my_average_count, 1);
@@ -845,7 +845,7 @@ static inline pcg32_random_t seed_my_rank(void)
 /*
  * Initializes the work array required for SHMEM collective functions
  */
-static void init_shmem_sync_array(long * restrict const pSync)
+static void init_shmem_sync_array(long * __restrict__ const pSync)
 {
   for(uint64_t i = 0; i < _SHMEM_REDUCE_SYNC_SIZE; ++i){
     pSync[i] = _SHMEM_SYNC_VALUE;
