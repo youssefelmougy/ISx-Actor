@@ -1,0 +1,1881 @@
+Started on nid004244
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.105781 seconds
+Average all2all time (per PE): 0.034772 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.081625 seconds
+Average all2all time (per PE): 0.030136 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.051686 seconds
+Average all2all time (per PE): 0.035663 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.057743 seconds
+Average all2all time (per PE): 0.049069 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.094187 seconds
+Average all2all time (per PE): 0.090604 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.175394 seconds
+Average all2all time (per PE): 0.173857 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.320829 seconds
+Average all2all time (per PE): 0.320175 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.332786 seconds
+Average all2all time (per PE): 1.607232 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.947149 seconds
+Average all2all time (per PE): 2.386404 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.933000 seconds
+Average all2all time (per PE): 4.706479 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.325669 seconds
+Average all2all time (per PE): 4.787772 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.223404 seconds
+Average all2all time (per PE): 4.782224 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.372056 seconds
+Average all2all time (per PE): 4.960958 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.507198 seconds
+Average all2all time (per PE): 5.088258 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.234684 seconds
+Average all2all time (per PE): 1.559123 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.583342 seconds
+Average all2all time (per PE): 2.216314 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.005886 seconds
+Average all2all time (per PE): 4.645792 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.103576 seconds
+Average all2all time (per PE): 4.750650 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.179874 seconds
+Average all2all time (per PE): 4.815158 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.129726 seconds
+Average all2all time (per PE): 4.759452 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.203879 seconds
+Average all2all time (per PE): 4.822114 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.105465 seconds
+Average all2all time (per PE): 0.034184 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.082453 seconds
+Average all2all time (per PE): 0.030507 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.054713 seconds
+Average all2all time (per PE): 0.036115 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056153 seconds
+Average all2all time (per PE): 0.048807 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.094927 seconds
+Average all2all time (per PE): 0.091476 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.175774 seconds
+Average all2all time (per PE): 0.174107 seconds
+srun: Step created for StepId=35580644.27
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.324129 seconds
+Average all2all time (per PE): 0.323465 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.122894 seconds
+Average all2all time (per PE): 1.599068 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.822252 seconds
+Average all2all time (per PE): 2.251214 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.495572 seconds
+Average all2all time (per PE): 4.588039 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.098726 seconds
+Average all2all time (per PE): 4.599182 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.312739 seconds
+Average all2all time (per PE): 4.868669 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.317141 seconds
+Average all2all time (per PE): 4.907105 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.319333 seconds
+Average all2all time (per PE): 4.891107 seconds
+srun: Step created for StepId=35580644.35
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.326266 seconds
+Average all2all time (per PE): 1.638422 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.596441 seconds
+Average all2all time (per PE): 2.227510 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.095079 seconds
+Average all2all time (per PE): 4.735521 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.904371 seconds
+Average all2all time (per PE): 4.549779 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.153709 seconds
+Average all2all time (per PE): 4.790135 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.130185 seconds
+Average all2all time (per PE): 4.759890 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.198137 seconds
+Average all2all time (per PE): 4.815736 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.116107 seconds
+Average all2all time (per PE): 0.037398 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.082460 seconds
+Average all2all time (per PE): 0.030708 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.053317 seconds
+Average all2all time (per PE): 0.036144 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.055128 seconds
+Average all2all time (per PE): 0.047812 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.095369 seconds
+Average all2all time (per PE): 0.091979 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.172589 seconds
+Average all2all time (per PE): 0.171072 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.320903 seconds
+Average all2all time (per PE): 0.320224 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.163964 seconds
+Average all2all time (per PE): 1.620008 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.843842 seconds
+Average all2all time (per PE): 2.301994 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.515952 seconds
+Average all2all time (per PE): 4.636966 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.249972 seconds
+Average all2all time (per PE): 4.743539 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.142105 seconds
+Average all2all time (per PE): 4.703473 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.168249 seconds
+Average all2all time (per PE): 4.758971 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.248855 seconds
+Average all2all time (per PE): 4.818975 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.356788 seconds
+Average all2all time (per PE): 1.657063 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.574269 seconds
+Average all2all time (per PE): 2.206521 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.910691 seconds
+Average all2all time (per PE): 4.550933 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.930850 seconds
+Average all2all time (per PE): 4.575573 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.042066 seconds
+Average all2all time (per PE): 4.678461 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.146895 seconds
+Average all2all time (per PE): 4.777396 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.220063 seconds
+Average all2all time (per PE): 4.837374 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.124980 seconds
+Average all2all time (per PE): 0.037809 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.081759 seconds
+Average all2all time (per PE): 0.030244 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.052623 seconds
+Average all2all time (per PE): 0.036445 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056263 seconds
+Average all2all time (per PE): 0.048981 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.095562 seconds
+Average all2all time (per PE): 0.092057 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.174507 seconds
+Average all2all time (per PE): 0.172973 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.317592 seconds
+Average all2all time (per PE): 0.316934 seconds
+srun: Step created for StepId=35580644.70
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.117434 seconds
+Average all2all time (per PE): 1.608768 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.752433 seconds
+Average all2all time (per PE): 2.210438 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.552524 seconds
+Average all2all time (per PE): 4.658420 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.240736 seconds
+Average all2all time (per PE): 4.741093 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.149587 seconds
+Average all2all time (per PE): 4.707921 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.157818 seconds
+Average all2all time (per PE): 4.749104 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.223967 seconds
+Average all2all time (per PE): 4.806382 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.350753 seconds
+Average all2all time (per PE): 1.649393 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.606274 seconds
+Average all2all time (per PE): 2.240196 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.038576 seconds
+Average all2all time (per PE): 4.677422 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.125514 seconds
+Average all2all time (per PE): 4.768715 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.151442 seconds
+Average all2all time (per PE): 4.786760 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.152478 seconds
+Average all2all time (per PE): 4.782528 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.195264 seconds
+Average all2all time (per PE): 4.808484 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.107610 seconds
+Average all2all time (per PE): 0.035711 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.081810 seconds
+Average all2all time (per PE): 0.030178 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.053031 seconds
+Average all2all time (per PE): 0.036116 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056219 seconds
+Average all2all time (per PE): 0.048975 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.094991 seconds
+Average all2all time (per PE): 0.091540 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.174043 seconds
+Average all2all time (per PE): 0.172507 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.326322 seconds
+Average all2all time (per PE): 0.325632 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.204029 seconds
+Average all2all time (per PE): 1.667801 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.778007 seconds
+Average all2all time (per PE): 2.245236 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.578931 seconds
+Average all2all time (per PE): 4.689925 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.041358 seconds
+Average all2all time (per PE): 4.541105 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.186299 seconds
+Average all2all time (per PE): 4.745440 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.153121 seconds
+Average all2all time (per PE): 4.740682 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.235585 seconds
+Average all2all time (per PE): 4.814907 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.330311 seconds
+Average all2all time (per PE): 1.629961 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.588751 seconds
+Average all2all time (per PE): 2.220150 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.082445 seconds
+Average all2all time (per PE): 4.721977 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.113294 seconds
+Average all2all time (per PE): 4.757271 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.038041 seconds
+Average all2all time (per PE): 4.675233 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.129150 seconds
+Average all2all time (per PE): 4.758896 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.207565 seconds
+Average all2all time (per PE): 4.821523 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.114371 seconds
+Average all2all time (per PE): 0.035478 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.082035 seconds
+Average all2all time (per PE): 0.030383 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.055122 seconds
+Average all2all time (per PE): 0.036428 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056767 seconds
+Average all2all time (per PE): 0.049459 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.094211 seconds
+Average all2all time (per PE): 0.090673 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.174438 seconds
+Average all2all time (per PE): 0.172908 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.316247 seconds
+Average all2all time (per PE): 0.315570 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.639768 seconds
+Average all2all time (per PE): 1.670501 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.751483 seconds
+Average all2all time (per PE): 2.212778 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.491111 seconds
+Average all2all time (per PE): 4.629378 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.087423 seconds
+Average all2all time (per PE): 4.592290 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.274471 seconds
+Average all2all time (per PE): 4.778902 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.198479 seconds
+Average all2all time (per PE): 4.784564 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.248007 seconds
+Average all2all time (per PE): 4.818143 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.311036 seconds
+Average all2all time (per PE): 1.624644 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.602975 seconds
+Average all2all time (per PE): 2.237087 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.037634 seconds
+Average all2all time (per PE): 4.677436 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.104106 seconds
+Average all2all time (per PE): 4.747680 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.136826 seconds
+Average all2all time (per PE): 4.772520 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.171175 seconds
+Average all2all time (per PE): 4.801229 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.196984 seconds
+Average all2all time (per PE): 4.811378 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.117721 seconds
+Average all2all time (per PE): 0.039817 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.082338 seconds
+Average all2all time (per PE): 0.030364 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.052815 seconds
+Average all2all time (per PE): 0.036152 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056462 seconds
+Average all2all time (per PE): 0.049138 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.096335 seconds
+Average all2all time (per PE): 0.092894 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.177120 seconds
+Average all2all time (per PE): 0.175564 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.328774 seconds
+Average all2all time (per PE): 0.328102 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.089687 seconds
+Average all2all time (per PE): 1.569878 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.760173 seconds
+Average all2all time (per PE): 2.217715 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.452901 seconds
+Average all2all time (per PE): 4.605293 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.006253 seconds
+Average all2all time (per PE): 4.511151 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.263508 seconds
+Average all2all time (per PE): 4.820565 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.328820 seconds
+Average all2all time (per PE): 4.910366 seconds
+srun: Step created for StepId=35580644.139
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.312859 seconds
+Average all2all time (per PE): 4.891413 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.195355 seconds
+Average all2all time (per PE): 1.526850 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.616815 seconds
+Average all2all time (per PE): 2.249165 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.993070 seconds
+Average all2all time (per PE): 4.632050 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.917024 seconds
+Average all2all time (per PE): 4.560206 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.093182 seconds
+Average all2all time (per PE): 4.728673 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.161421 seconds
+Average all2all time (per PE): 4.791312 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.201897 seconds
+Average all2all time (per PE): 4.819447 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.116174 seconds
+Average all2all time (per PE): 0.036971 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.082268 seconds
+Average all2all time (per PE): 0.030539 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.052166 seconds
+Average all2all time (per PE): 0.035928 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.055907 seconds
+Average all2all time (per PE): 0.048708 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.096092 seconds
+Average all2all time (per PE): 0.092699 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.174162 seconds
+Average all2all time (per PE): 0.172660 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.321004 seconds
+Average all2all time (per PE): 0.320355 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.144451 seconds
+Average all2all time (per PE): 1.619294 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.760467 seconds
+Average all2all time (per PE): 2.223999 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.593712 seconds
+Average all2all time (per PE): 4.652771 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.250642 seconds
+Average all2all time (per PE): 4.751300 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.202483 seconds
+Average all2all time (per PE): 4.694255 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.270923 seconds
+Average all2all time (per PE): 4.865146 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.222032 seconds
+Average all2all time (per PE): 4.804221 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.372766 seconds
+Average all2all time (per PE): 1.657602 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.592747 seconds
+Average all2all time (per PE): 2.224565 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.974692 seconds
+Average all2all time (per PE): 4.615419 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.044336 seconds
+Average all2all time (per PE): 4.685515 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.071427 seconds
+Average all2all time (per PE): 4.702213 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.117615 seconds
+Average all2all time (per PE): 4.747569 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.197218 seconds
+Average all2all time (per PE): 4.810808 seconds
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.116356 seconds
+Average all2all time (per PE): 0.036976 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.081869 seconds
+Average all2all time (per PE): 0.030074 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.052873 seconds
+Average all2all time (per PE): 0.035901 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056121 seconds
+Average all2all time (per PE): 0.048803 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.094113 seconds
+Average all2all time (per PE): 0.090509 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.173414 seconds
+Average all2all time (per PE): 0.171884 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.320640 seconds
+Average all2all time (per PE): 0.319976 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.139816 seconds
+Average all2all time (per PE): 1.601430 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.806088 seconds
+Average all2all time (per PE): 2.272266 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.626737 seconds
+Average all2all time (per PE): 4.711732 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.062454 seconds
+Average all2all time (per PE): 4.547783 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.201524 seconds
+Average all2all time (per PE): 4.753172 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.137901 seconds
+Average all2all time (per PE): 4.745379 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.365681 seconds
+Average all2all time (per PE): 4.932247 seconds
+srun: Step created for StepId=35580644.182
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.293484 seconds
+Average all2all time (per PE): 1.613302 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.570947 seconds
+Average all2all time (per PE): 2.203685 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.963272 seconds
+Average all2all time (per PE): 4.602909 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.954937 seconds
+Average all2all time (per PE): 4.593075 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.128493 seconds
+Average all2all time (per PE): 4.757925 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.278196 seconds
+Average all2all time (per PE): 4.908056 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.196038 seconds
+Average all2all time (per PE): 4.813816 seconds
+srun: Step created for StepId=35580644.189
+ISx v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.105128 seconds
+Average all2all time (per PE): 0.034488 seconds
+ISx v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.081945 seconds
+Average all2all time (per PE): 0.030453 seconds
+ISx v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.051965 seconds
+Average all2all time (per PE): 0.035899 seconds
+ISx v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.056373 seconds
+Average all2all time (per PE): 0.048774 seconds
+ISx v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.094804 seconds
+Average all2all time (per PE): 0.091064 seconds
+ISx v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.172562 seconds
+Average all2all time (per PE): 0.170993 seconds
+ISx v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.323712 seconds
+Average all2all time (per PE): 0.323019 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 5.675972 seconds
+Average all2all time (per PE): 1.681682 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.740188 seconds
+Average all2all time (per PE): 2.201815 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.676156 seconds
+Average all2all time (per PE): 4.735416 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 7.228261 seconds
+Average all2all time (per PE): 4.720924 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 7.226818 seconds
+Average all2all time (per PE): 4.779817 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 7.318612 seconds
+Average all2all time (per PE): 4.908713 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 7.242410 seconds
+Average all2all time (per PE): 4.812185 seconds
+srun: Step created for StepId=35580644.203
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.268350 seconds
+Average all2all time (per PE): 1.594578 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.605778 seconds
+Average all2all time (per PE): 2.238877 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.895914 seconds
+Average all2all time (per PE): 4.535768 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.116424 seconds
+Average all2all time (per PE): 4.758092 seconds
+ISx v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.123992 seconds
+Average all2all time (per PE): 4.758829 seconds
+slurmstepd: error: *** JOB 35580644 ON nid004244 CANCELLED AT 2025-02-08T07:58:07 DUE TO TIME LIMIT ***

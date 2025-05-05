@@ -4,7 +4,6 @@ OPTFLAGS = -O3 -DNDEBUG -mavx
 CXXFLAGS += -Wall -Wextra -std=c++11 #$(OPTFLAGS)
 LDLIBS += -lrt -lm
 LDFLAGS += 
-
 ### 
 # If you change these values, you must also change them in params.h
 STRONG = 1
@@ -35,15 +34,15 @@ optimized: all
 debug: CXXFLAGS += $(DEBUGFLAGS)
 debug: all
 
-$(STRONG_EXE): $(STRONG_OBJS)
+$(STRONG_EXE):$(STRONG_OBJS)
 	@mkdir -p $(BINDIR)
 	$(LD) $(STRONG_OBJS) -o $(BINDIR)/$(STRONG_EXE) $(LDLIBS) $(LDFLAGS)
 
-$(WEAK_EXE): $(WEAK_OBJS)
+$(WEAK_EXE):$(WEAK_OBJS)
 	@mkdir -p $(BINDIR)
 	$(LD) $(WEAK_OBJS) -o $(BINDIR)/$(WEAK_EXE) $(LDLIBS) $(LDFLAGS)
 
-$(WEAKISO_EXE): $(WEAKISO_OBJS)
+$(WEAKISO_EXE):$(WEAKISO_OBJS)
 	@mkdir -p $(BINDIR)
 	$(LD) $(WEAKISO_OBJS) -o $(BINDIR)/$(WEAKISO_EXE) $(LDLIBS) $(LDFLAGS)
 
@@ -68,8 +67,8 @@ clean:
 	@- $(RM) $(WEAKISO_OBJS)
 
 depend:
-	makedepend -- $(CXXFLAGS) -- $(SRCS)
+	    makedepend -- $(CXXFLAGS) -- $(SRCS)
 
 # Don't place anything below this line, since
-# the make depend program will overwrite it
-# DO NOT DELETE THIS LINE -- make depend depends on it.
+# # the make depend program will overwrite it
+# # DO NOT DELETE THIS LINE -- make depend depends on it.

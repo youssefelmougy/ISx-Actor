@@ -1,0 +1,955 @@
+Started on nid004512
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.138430 seconds
+Average all2all time (per PE): 0.011524 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.083474 seconds
+Average all2all time (per PE): 0.010901 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.317785 seconds
+Average all2all time (per PE): 0.175046 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.568102 seconds
+Average all2all time (per PE): 0.383409 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.440705 seconds
+Average all2all time (per PE): 0.333147 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.130801 seconds
+Average all2all time (per PE): 0.097125 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.054797 seconds
+Average all2all time (per PE): 0.051626 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 6.979043 seconds
+Average all2all time (per PE): 0.460461 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.341332 seconds
+Average all2all time (per PE): 0.851289 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.704274 seconds
+Average all2all time (per PE): 2.572554 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 8.664181 seconds
+Average all2all time (per PE): 3.924634 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 9.204114 seconds
+Average all2all time (per PE): 4.372373 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 10.137946 seconds
+Average all2all time (per PE): 4.600109 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 14.355023 seconds
+Average all2all time (per PE): 6.938756 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.737871 seconds
+Average all2all time (per PE): 0.458367 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.386729 seconds
+Average all2all time (per PE): 0.852451 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.207882 seconds
+Average all2all time (per PE): 2.567126 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 8.060092 seconds
+Average all2all time (per PE): 3.868710 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 8.855578 seconds
+Average all2all time (per PE): 4.429393 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 10.002887 seconds
+Average all2all time (per PE): 4.616220 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 27.076069 seconds
+Average all2all time (per PE): 6.519984 seconds
+srun: Step created for StepId=35580635.21
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.144991 seconds
+Average all2all time (per PE): 0.012212 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.088212 seconds
+Average all2all time (per PE): 0.011197 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.316770 seconds
+Average all2all time (per PE): 0.175265 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.570473 seconds
+Average all2all time (per PE): 0.385677 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.439668 seconds
+Average all2all time (per PE): 0.332330 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.130969 seconds
+Average all2all time (per PE): 0.097381 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.057182 seconds
+Average all2all time (per PE): 0.051520 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 6.682429 seconds
+Average all2all time (per PE): 0.452250 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.647018 seconds
+Average all2all time (per PE): 0.852941 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.799503 seconds
+Average all2all time (per PE): 2.573351 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 8.662035 seconds
+Average all2all time (per PE): 3.888786 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 9.200333 seconds
+Average all2all time (per PE): 4.409586 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 16.071953 seconds
+Average all2all time (per PE): 4.486488 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 14.354859 seconds
+Average all2all time (per PE): 7.017192 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.696683 seconds
+Average all2all time (per PE): 0.441524 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.428079 seconds
+Average all2all time (per PE): 0.854681 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.574495 seconds
+Average all2all time (per PE): 2.561244 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.796730 seconds
+Average all2all time (per PE): 3.875435 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 8.769659 seconds
+Average all2all time (per PE): 4.320807 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 23.021761 seconds
+Average all2all time (per PE): 4.412968 seconds
+srun: Step created for StepId=35580635.41
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 14.355215 seconds
+Average all2all time (per PE): 7.077325 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.149435 seconds
+Average all2all time (per PE): 0.011966 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.083071 seconds
+Average all2all time (per PE): 0.010802 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.318889 seconds
+Average all2all time (per PE): 0.175575 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.567279 seconds
+Average all2all time (per PE): 0.383584 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.438714 seconds
+Average all2all time (per PE): 0.331293 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.130818 seconds
+Average all2all time (per PE): 0.097197 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.054682 seconds
+Average all2all time (per PE): 0.051615 seconds
+srun: Step created for StepId=35580635.49
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 7.010699 seconds
+Average all2all time (per PE): 0.440297 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.608785 seconds
+Average all2all time (per PE): 0.853207 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 8.513721 seconds
+Average all2all time (per PE): 2.556485 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 9.426188 seconds
+Average all2all time (per PE): 3.903502 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 9.403998 seconds
+Average all2all time (per PE): 4.436000 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 10.208752 seconds
+Average all2all time (per PE): 4.696108 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 14.363421 seconds
+Average all2all time (per PE): 6.908543 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.536239 seconds
+Average all2all time (per PE): 0.449113 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 4.329754 seconds
+Average all2all time (per PE): 0.852313 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.641319 seconds
+Average all2all time (per PE): 2.571974 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.751096 seconds
+Average all2all time (per PE): 3.887964 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 8.699960 seconds
+Average all2all time (per PE): 4.342292 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 22.599956 seconds
+Average all2all time (per PE): 4.487442 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 14.295674 seconds
+Average all2all time (per PE): 7.046055 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.148354 seconds
+Average all2all time (per PE): 0.012212 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.084341 seconds
+Average all2all time (per PE): 0.011003 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.318053 seconds
+Average all2all time (per PE): 0.174517 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.565348 seconds
+Average all2all time (per PE): 0.381071 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.440141 seconds
+Average all2all time (per PE): 0.332545 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.130455 seconds
+Average all2all time (per PE): 0.096986 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.054884 seconds
+Average all2all time (per PE): 0.051388 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 7.286312 seconds
+Average all2all time (per PE): 0.475917 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.577069 seconds
+Average all2all time (per PE): 0.848269 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 7.478323 seconds
+Average all2all time (per PE): 2.530466 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 8.545694 seconds
+Average all2all time (per PE): 3.876092 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 9.270618 seconds
+Average all2all time (per PE): 4.410466 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 10.144746 seconds
+Average all2all time (per PE): 4.616842 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 26.721562 seconds
+Average all2all time (per PE): 6.511786 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.546924 seconds
+Average all2all time (per PE): 0.457455 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 1048576
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 5.623573 seconds
+Average all2all time (per PE): 0.845327 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 2097152
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 6.325263 seconds
+Average all2all time (per PE): 2.590973 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 4194304
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 7.934523 seconds
+Average all2all time (per PE): 3.961724 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 8388608
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 8.688410 seconds
+Average all2all time (per PE): 4.336830 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 16777216
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 10.319995 seconds
+Average all2all time (per PE): 4.482348 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 33554432
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 16.077953 seconds
+Average all2all time (per PE): 6.394337 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 2097152
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  STRONG Scaling!
+Average total time (per PE): 0.151709 seconds
+Average all2all time (per PE): 0.011885 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 1048576
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  STRONG Scaling!
+Average total time (per PE): 0.081936 seconds
+Average all2all time (per PE): 0.010901 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 524288
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  STRONG Scaling!
+Average total time (per PE): 0.318336 seconds
+Average all2all time (per PE): 0.175437 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 262144
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  STRONG Scaling!
+Average total time (per PE): 0.565918 seconds
+Average all2all time (per PE): 0.381863 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 131072
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  STRONG Scaling!
+Average total time (per PE): 0.438013 seconds
+Average all2all time (per PE): 0.331046 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 65536
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  STRONG Scaling!
+Average total time (per PE): 0.131052 seconds
+Average all2all time (per PE): 0.097303 seconds
+srun: Step created for StepId=35580635.90
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 32768
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  STRONG Scaling!
+Average total time (per PE): 0.054819 seconds
+Average all2all time (per PE): 0.051813 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 4194304
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK Scaling!
+Average total time (per PE): 7.551500 seconds
+Average all2all time (per PE): 0.465361 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 2097152
+  Number of Iterations: 1
+  Number of PEs: 128
+  WEAK Scaling!
+Average total time (per PE): 7.591467 seconds
+Average all2all time (per PE): 0.846208 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 1048576
+  Number of Iterations: 1
+  Number of PEs: 256
+  WEAK Scaling!
+Average total time (per PE): 8.611503 seconds
+Average all2all time (per PE): 2.593492 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 524288
+  Number of Iterations: 1
+  Number of PEs: 512
+  WEAK Scaling!
+Average total time (per PE): 8.309571 seconds
+Average all2all time (per PE): 3.892140 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 262144
+  Number of Iterations: 1
+  Number of PEs: 1024
+  WEAK Scaling!
+Average total time (per PE): 9.270410 seconds
+Average all2all time (per PE): 4.409762 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 131072
+  Number of Iterations: 1
+  Number of PEs: 2048
+  WEAK Scaling!
+Average total time (per PE): 10.150481 seconds
+Average all2all time (per PE): 4.541118 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 65536
+  Number of Iterations: 1
+  Number of PEs: 4096
+  WEAK Scaling!
+Average total time (per PE): 27.273140 seconds
+Average all2all time (per PE): 6.607177 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 524288
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 64
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 3.195121 seconds
+Average all2all time (per PE): 0.447908 seconds
+Started on nid004178
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 16384
+  Max Key Value: 268435456
+  Bucket Width: 32768
+  Number of Iterations: 1
+  Number of PEs: 8192
+  STRONG Scaling!
+Average total time (per PE): 0.093141 seconds
+Average all2all time (per PE): 0.089992 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 8192
+  Max Key Value: 268435456
+  Bucket Width: 16384
+  Number of Iterations: 1
+  Number of PEs: 16384
+  STRONG Scaling!
+Average total time (per PE): 0.326979 seconds
+Average all2all time (per PE): 0.322629 seconds
+srun: Step created for StepId=35614086.2
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 32768
+  Number of Iterations: 1
+  Number of PEs: 8192
+  WEAK Scaling!
+Average total time (per PE): 34.423371 seconds
+Average all2all time (per PE): 11.054824 seconds
+Started on nid004199
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 268435456
+  Bucket Width: 16384
+  Number of Iterations: 1
+  Number of PEs: 16384
+  WEAK Scaling!
+Average total time (per PE): 41.660168 seconds
+Average all2all time (per PE): 22.773973 seconds
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 67108864
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 8192
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 23.045874 seconds
+Average all2all time (per PE): 11.066386 seconds
+srun: Step created for StepId=35617919.2
+ISx MPI 2 sided v1.1
+  Number of Keys per PE: 134217728
+  Max Key Value: 134217728
+  Bucket Width: 8192
+  Number of Iterations: 1
+  Number of PEs: 16384
+  WEAK_ISOBUCKET Scaling!
+Average total time (per PE): 49.037523 seconds
+Average all2all time (per PE): 20.909843 seconds
+
